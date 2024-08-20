@@ -1,0 +1,47 @@
+
+
+.chatPageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+
+.chatPage{
+   width: 80%;
+}
+
+.displayUsers{
+   width: 20%;
+}
+
+@media (max-width: 480px) {
+    .chatPageContainer{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .chatPage{
+        width: 100%
+    }
+
+    .displayUsers{
+        border: 2px solid black;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .chatPageContainer{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .chatPage{
+        width: 100%
+    }
+
+    .displayUsers{
+        border: 2px solid black;
+        width: 100%;
+    }
+}

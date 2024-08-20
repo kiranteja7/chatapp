@@ -1,0 +1,105 @@
+
+.userContainer{
+    max-width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.headingOfActive{
+    padding: 8px 50px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid blue;
+    text-align: center;
+}
+
+.activeUser{
+    padding: 8px 50px;
+    width: 100%;
+    background-color: rgba(144, 238, 144, 0.1);
+    color: black;
+    border-radius: 5px;
+    border: 1px solid rgba(144, 238, 144, 0.5);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.circle{
+    width: 4px;
+    padding: 4px 2px;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    top: -10px;
+}
+
+.logoutButtonDiv{
+    width: 100%;
+}
+
+.logoutBtn{
+    height: 40px; 
+    margin: auto 5rem;
+    padding: 10px 20px;  
+    background-color: red;  
+    color: #FFFFFF;  
+    font-size: 16px;  
+    font-weight: bold;  
+    text-align: center;  
+    line-height: 1.5;  
+    border: none; 
+    border-radius: 5px;  
+    cursor: pointer;  
+}
+
+
+@media (max-width: 480px) {
+    .userContainer{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .circle{
+        position: relative;
+        right: -20px;
+    }
+    .logoutButtonDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoutBtn{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .userContainer{
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .circle{
+        position: relative;
+        right: -20px;
+    }
+    .logoutButtonDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logoutBtn{
+        margin-bottom: 2rem;
+    }
+}

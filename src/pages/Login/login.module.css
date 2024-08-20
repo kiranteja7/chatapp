@@ -1,0 +1,29 @@
+
+
+.loginContainer {
+    width: 100%;
+    height: 100vh; /* Use vh for full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure no overflow from child elements */
+    position: relative; /* Allows for absolute positioning of children if needed */
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    position: absolute; /* Allows for layering of content on top */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Position the image behind other content */
+  }
+  
+  /* Additional styling for content overlay, if needed */
+  .overlayContent {
+    z-index: 1; /* Make sure this is above the background image */
+    color: #fff; /* Text color for contrast */
+    padding: 20px;
+    text-align: center;
+  }
