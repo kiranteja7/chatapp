@@ -25,8 +25,11 @@
     "socket.io-client": "^4.7.5",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
-    "start": "concurrently \"npm run start-react\" \"npm run start-server\"",
+ "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+ "scripts": {
+    "start": "npx concurrently \"npm run start-react\" \"npm run start-server\"",
     "start-react": "npm start",
     "start-server": "node server/index.js"
   },
