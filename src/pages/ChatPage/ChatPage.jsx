@@ -8,7 +8,8 @@ import { useEffect } from 'react';
 import io from 'socket.io-client';
 import { setMessages, setActiveUser } from '../../redux/reducers/chatReducer.js';
 
-const socket = io('http://localhost:4000');
+// const socket = io('http://localhost:4000');
+const socket = io('https://chatappbackend-eikz.onrender.com/');
 
 export const ChatPage = () => {
 

@@ -8,7 +8,8 @@ import { useNavigate } from 'react-router-dom';
 
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:4000');
+// const socket = io('http://localhost:4000');
+const socket = io('https://chatappbackend-eikz.onrender.com/');
 
 export const DisplayActiveUsers = () => {
     const dispatch = useDispatch();
