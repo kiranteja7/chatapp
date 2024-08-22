@@ -17,6 +17,7 @@ export const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (name && logo) {
       const userData = { name, logo, socketId: socket.id };
       localStorage.setItem('activeUser', JSON.stringify(userData));
@@ -41,6 +42,7 @@ export const LoginForm = () => {
                         name="name"
                         id="name"
                         placeholder='Example: John Doe'
+                        required
                     />
                     <label htmlFor="logo">Please provide image for logo:</label>
                     <input
@@ -51,6 +53,7 @@ export const LoginForm = () => {
                         name="logo"
                         id="logo"
                         placeholder='Example: https://example.com/logo.png'
+                        required
                     />
                     <button className={styles.submitBtn} type="button" onClick={handleSubmit}>Submit</button>
                 </div>
